@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Age Calculator</title>
 </head>
-<body>
-    
+
+<body class="bg-[#0A6CF1]">
+    <div class="px-20 py-3 ml-[450px] mt-20 rounded-lg bg-black w-fit">
+        <h1 class="bg-white p-2 rounded-lg font-bold text-3xl">Age Calculator</h1>
+    </div>
+
+    <div class="flex justify-center items-center h-[200px]">
+        <div class="p-6 bg-black rounded-lg">
+            <input class="px-6 py-2 rounded-lg" type="date" id="dateInput">
+            <button class="ml-5 px-6 py-2 rounded-lg bg-white font-bold" id="dateCalculate">Calculate</button>
+        </div>
+    </div>
+    <div class="flex ml-[460px]">
+        <div class="px-6 py-4 bg-black rounded-lg">
+            <div id="years" class="text-white font-bold text-3xl text-center">-</div>
+            <div class="text-white">Years</div>
+        </div>
+        <div class="px-6 py-4 bg-black rounded-lg ml-12">
+            <div id="months" class="text-white font-bold text-3xl text-center">-</div>
+            <div class="text-white text-[13px]">Months</div>
+        </div>
+        <div class="px-6 py-4 bg-black rounded-lg ml-12">
+            <div id="date" class="text-white font-bold text-3xl text-center">-</div>
+            <div class="text-white ">Date</div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./app.js"></script>
 </body>
+
 </html>
